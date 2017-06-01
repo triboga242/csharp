@@ -3,14 +3,18 @@ namespace DiagramaDeClases
 {
     public class Alumno:Persona
     {
+        //variables
         private Double nota_;
         private string matricula_;
 
+        //constructores
         public Alumno(double nota, string nombre, string edad):base(nombre, edad)
         {
             nota_ = Nota;
         }
 
+
+        //getters
         public double Nota
 
         {
