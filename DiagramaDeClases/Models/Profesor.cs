@@ -1,20 +1,38 @@
-﻿using System;
+﻿﻿using System;
 namespace DiagramaDeClases
 {
     public class Profesor:Persona , evaluable
     {
+        private float sueldo;
+
         public Profesor(string nombre, string edad):base(nombre, edad)
         {
         }
 
-        public override void evalua(double nota)
+		public float Sueldo
+		{
+			get
+			{
+				return sueldo;
+			}
+			set
+			{
+				sueldo = value;
+			}
+		}
+		public void Reganiar(string saludo)
+		{
+			Console.WriteLine(saludo);
+		}
+
+        public void Evalua(Alumno alumno, double nota)
         {
-            throw new NotImplementedException();
+            alumno.Nota = nota;
         }
 
-        public void Saludar()
+        public override void Saludar(string saludo)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(saludo);
         }
     }
 }

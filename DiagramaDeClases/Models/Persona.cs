@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 namespace DiagramaDeClases
 {
     public abstract class Persona: Saludable
@@ -35,22 +35,16 @@ namespace DiagramaDeClases
                 edad_ = value;
             }
         }
-
-        public virtual void Saluda(string saludo)
-		{
-			Console.WriteLine(saludo);
-		}
+        virtual public void Andar(){}
 
         public override string ToString()
         {
             return string.Format("[Persona: Nombre={0}, Edad={1}]", Nombre, Edad);
         }
 
-        public void saludar()
-        {
-            throw new NotImplementedException();
-        }
+       
+		public abstract void Saludar(string saludo);
 
-        public abstract void evalua(double nota);
+
     }
 }

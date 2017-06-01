@@ -8,6 +8,6 @@ namespace DiagramaDeClases
 {
     interface evaluable
     {
-        void evalua(double nota);
+        void Evalua(Alumno alumno, double nota);
     }
 }
