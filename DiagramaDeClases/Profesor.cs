@@ -12,7 +12,7 @@ namespace DiagramaDeClases
             throw new NotImplementedException();
         }
 
-        public void saludar()
+        public void Saludar()
         {
             throw new NotImplementedException();
         }
